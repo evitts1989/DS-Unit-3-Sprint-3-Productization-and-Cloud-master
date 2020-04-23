@@ -8,6 +8,15 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -15,3 +24,21 @@
         }
     ]
 }
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+flask = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+python-dotenv = "*"
+requests = "*"
+basilica = "*"
+tweepy = "*"
+
+[requires]
+python_version = "3.7"
